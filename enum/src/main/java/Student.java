@@ -1,9 +1,4 @@
-public enum Student {
-    Linda("Linda", "Female"),
-    Bob("Bob", "Male"),
-    Solider("Solider", "Male"),
-    Cindy("Cindy", "Female");
-
+public class Student {
     private String name;
     private String gender;
 
@@ -30,6 +25,6 @@ public enum Student {
 
     @Override
     public String toString() {
-        return ("姓名 ： " + this.name + "性别 ： " + this.gender);
+        return ("姓名 ： " + this.name + "    性别 ： " + this.gender);
     }
 }

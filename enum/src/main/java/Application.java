@@ -1,15 +1,18 @@
 public class Application {
 
     public static void main(String[] args) {
+        addStudent();
         findAllFemale();
     }
 
     public static void findAllFemale() {
-        for (Student student : Student.values()) {
-            if (student.getGender().equals("Female")) {
-                System.out.println(student);
-            }
-        }
+        GenderEnum.Female.showStudentsInfo();
+    }
+    public static void addStudent() {
+        GenderEnum.Male.addStudent("Bob");
+        GenderEnum.Male.addStudent("Solider");
+        GenderEnum.Female.addStudent("Linda");
+        GenderEnum.Female.addStudent("Cindy");
     }
 
 }
